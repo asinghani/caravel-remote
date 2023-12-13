@@ -1,0 +1,18 @@
+
+https://github.com/efabless/caravel/blob/main/verilog/rtl/housekeeping.v#L340
+https://github.com/efabless/caravel-gf180mcu/blob/main/verilog/rtl/housekeeping.v#L327
+
+https://github.com/efabless/caravel_board/blob/main/hardware/development/caravel-dev-v5-M.2/caravel-dev-v5-M.2.pdf
+https://github.com/efabless/caravel_board/blob/main/hardware/development/caravel-dev-gf180-v6-M.2/caravel-5V-dev-v6-M.2.pdf
+
+
+test design
+-------------
+out0 = DFF(D = in1, clk = in0)
+out1 = ~out0
+out2 = DFFSR(D = in1, clk = in2, S = in3, R = in4)
+out3 = ~out2
+out4 = LATCHSR(S_b = in5, R_b = in6)
+out5 = ~out4
+out6 = LATCHSR(S = (in1)(in7), R = (!in1)(!in7))
+out7 = !in0
